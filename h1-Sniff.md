@@ -54,6 +54,11 @@ Source: wikipedia: https://en.wikipedia.org/wiki/Internet_protocol_suite
 # h)
 <img width="1277" height="754" alt="weppipalvelin" src="https://github.com/user-attachments/assets/f9c2fee6-48b8-4e7d-989f-3600bc46e989" />
 # i)
+- This is a normal search to terokarvinen.com
+- frame 1 oct 26, 2025
+- frame 16 oct 26, 2025
+- 331 packets captured
+- Network card: PCSSystemstec
 # Sources 
 
 Karvinen 2025: Wireshark - getting started: https://terokarvinen.com/wireshark-getting-started/
