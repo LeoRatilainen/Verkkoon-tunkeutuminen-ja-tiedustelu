@@ -51,8 +51,26 @@ Source: wikipedia: https://en.wikipedia.org/wiki/Internet_protocol_suite
 - You can see in captured file properties found in the Statistics tab that the capture lasted for slightly over 7 seconds with 283 packets captured.
 
 # g) 
+I tried a lot of different methods to see the network card being used including 
+
+### capture -> options tab.
+
+<img width="933" height="510" alt="Capture" src="https://github.com/user-attachments/assets/46daa52e-4ac3-450f-9e04-ae1660903598" />
+
+### Looking at the ethernet 2 source for any frame.
+
+<img width="1278" height="775" alt="Ethernet2" src="https://github.com/user-attachments/assets/cec4f91e-ae4d-4d1e-9ada-84f6ac79a666" />
+
+### and looking at the capture file properties.
+
+<img width="842" height="736" alt="Capture_file" src="https://github.com/user-attachments/assets/c9026ad3-125a-4444-a535-7a8d611d8df8" />
+
+None of them gave me an answer to this question. I am not sure if i have some setting that is misconfigured but this is what i tried to get it working.
+
 # h)
+By typing dns.qry.name into the filter you can see dns querys in this case we can see the user visting google.com and terokarvinen.com.
 <img width="1277" height="754" alt="weppipalvelin" src="https://github.com/user-attachments/assets/f9c2fee6-48b8-4e7d-989f-3600bc46e989" />
+
 # i)
 <img width="1272" height="773" alt="analysis" src="https://github.com/user-attachments/assets/58be95e1-7e72-461c-8853-38f978ce95ae" />
 
@@ -61,16 +79,11 @@ Source: wikipedia: https://en.wikipedia.org/wiki/Internet_protocol_suite
 - frame 16 oct 26, 2025
 - 331 packets captured
 - Network card: PCSSystemstec
-- 22sec
+- the whole capture lasted for about 22 seconds
 # Sources 
 
 Karvinen 2025: Wireshark - getting started: https://terokarvinen.com/wireshark-getting-started/
 
 Karvinen 2025: Network Interface Names on Linux: https://terokarvinen.com/network-interface-linux/
 
-Wikipedia: https://en.wikipedia.org/wiki/Internet_protocol_suite
-
-<img width="933" height="510" alt="Capture" src="https://github.com/user-attachments/assets/46daa52e-4ac3-450f-9e04-ae1660903598" />
-<img width="1278" height="775" alt="Ethernet2" src="https://github.com/user-attachments/assets/cec4f91e-ae4d-4d1e-9ada-84f6ac79a666" />
-
-<img width="842" height="736" alt="Capture_file" src="https://github.com/user-attachments/assets/c9026ad3-125a-4444-a535-7a8d611d8df8" />
+Wikipedia: https://en.wikipedia.org/wiki/Internet_protocol_suit
