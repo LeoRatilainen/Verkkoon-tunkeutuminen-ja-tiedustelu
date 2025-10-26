@@ -42,7 +42,7 @@ Then i launched wireshark with 'wireshark' and started capturing my wifi package
 
 - By going to Statistics -> endpoints tab in wireshark you can see Ethernet has 2 listed and IPv4 has 7 so this would mean there was 2 physical connections and 7 IP addresses.
 - The most used protocols in this capture are DNS, QUIC, TCP and TLSv1.3
-- You can see 283 packages captured this would tell you that the capture was very short maybe like 2 or 3 searches.
+- You can see in captured file properties found in the Statistics tab that the capture lasted for slightly over 7 seconds with 283 packets captured.
 
 # g) 
 # h)
