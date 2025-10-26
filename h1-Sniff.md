@@ -1,12 +1,16 @@
 # x)
 ## Karvinen 2025: Wireshark - Getting Started
-- 
-- 
-- 
+- This is an article that has a tutorial on how to install wireshark on Debian linux and how to get started using it.
+- It also includes some troubleshooting tips if no packets are being captured.
+   - the tip given is to search the web and if that fails maybe you're not in group to which you can see the instructions on how to do that earlier in the guide
+- It also has some instuctions on viewing captures
+
+source: https://terokarvinen.com/wireshark-getting-started/
 ## Karvinen 2025: Network Interface Names on Linux
-- 
-- 
-- 
+- This article explains Network Interdace Names (like wlps4s and enp1s0) mean.
+- it also tells you how to check your own interfaces with 'ip a' and 'ip route'
+  
+source: https://terokarvinen.com/network-interface-linux/
 # a)
 Debian was already installed and works without issue
 
@@ -35,6 +39,8 @@ Then i launched wireshark with 'wireshark' and started capturing my wifi package
    - This layer is used to transport network packets from the host across network boundaries.
 4. Ethernet 2 or local are network or LAN is the Link layer
    - This is the group of methods and communication protocols confined to the link that that a host is physically connected to.
+ 
+Source: wikipedia: https://en.wikipedia.org/wiki/Internet_protocol_suite
 
 <img width="922" height="554" alt="d)_updated" src="https://github.com/user-attachments/assets/30189746-1688-4371-a44e-9af66a0737ad" />
 
@@ -47,6 +53,14 @@ Then i launched wireshark with 'wireshark' and started capturing my wifi package
 # g) 
 # h)
 # i)
+# Sources 
+
+Karvinen 2025: Wireshark - getting started: https://terokarvinen.com/wireshark-getting-started/
+
+Karvinen 2025: Network Interface Names on Linux: https://terokarvinen.com/network-interface-linux/
+
+Wikipedia: https://en.wikipedia.org/wiki/Internet_protocol_suite
+
 <img width="933" height="510" alt="Capture" src="https://github.com/user-attachments/assets/46daa52e-4ac3-450f-9e04-ae1660903598" />
 
 <img width="842" height="736" alt="Capture_file" src="https://github.com/user-attachments/assets/c9026ad3-125a-4444-a535-7a8d611d8df8" />
