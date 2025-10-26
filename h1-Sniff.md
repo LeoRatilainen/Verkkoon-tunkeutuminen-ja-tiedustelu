@@ -52,6 +52,7 @@ Source: wikipedia: https://en.wikipedia.org/wiki/Internet_protocol_suite
 
 # g) 
 # h)
+<img width="1277" height="754" alt="weppipalvelin" src="https://github.com/user-attachments/assets/f9c2fee6-48b8-4e7d-989f-3600bc46e989" />
 # i)
 # Sources 
 
@@ -62,5 +63,6 @@ Karvinen 2025: Network Interface Names on Linux: https://terokarvinen.com/networ
 Wikipedia: https://en.wikipedia.org/wiki/Internet_protocol_suite
 
 <img width="933" height="510" alt="Capture" src="https://github.com/user-attachments/assets/46daa52e-4ac3-450f-9e04-ae1660903598" />
+<img width="1278" height="775" alt="Ethernet2" src="https://github.com/user-attachments/assets/cec4f91e-ae4d-4d1e-9ada-84f6ac79a666" />
 
 <img width="842" height="736" alt="Capture_file" src="https://github.com/user-attachments/assets/c9026ad3-125a-4444-a535-7a8d611d8df8" />
