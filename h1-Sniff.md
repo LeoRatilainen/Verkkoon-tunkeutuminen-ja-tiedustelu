@@ -47,4 +47,6 @@ Then i launched wireshark with 'wireshark' and started capturing my wifi package
 # g) 
 # h)
 # i)
+<img width="933" height="510" alt="Capture" src="https://github.com/user-attachments/assets/46daa52e-4ac3-450f-9e04-ae1660903598" />
 
+<img width="842" height="736" alt="Capture_file" src="https://github.com/user-attachments/assets/c9026ad3-125a-4444-a535-7a8d611d8df8" />
