@@ -8,20 +8,46 @@ In the picture given the toughest one is TTPs meaning it would cause a lot of pa
 ### source: https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf
 ### source: https://www.eccouncil.org/cybersecurity-exchange/ethical-hacking/diamond-model-intrusion-analysis/
 # a) Apache log.
+- I downloaded apache2 with 'sudo apt-get install apache2' then started it with 'sudo systemctl start apache2'.
+- After this i opened my web browser and went to 'http://localhost' and this web page opened.
+
 <img width="1277" height="772" alt="Apache2_works" src="https://github.com/user-attachments/assets/19934469-f395-4090-9ffc-4a2d2fb6c18c" />
-<img width="899" height="380" alt="Apache_log" src="https://github.com/user-attachments/assets/75f18798-4d1b-4424-9e4f-c95e92bdb122" />
-<img width="1074" height="175" alt="A-script" src="https://github.com/user-attachments/assets/7560d7a5-af40-482e-b8e2-d1632e8765ab" />
-<img width="1260" height="374" alt="jäljet-logissa" src="https://github.com/user-attachments/assets/e58b4408-c55e-4b10-95b5-7fbdfa896832" />
-<img width="1275" height="681" alt="nmap_kohdat" src="https://github.com/user-attachments/assets/156c985e-d07e-4394-90fd-31bd5aff1505" />
-<img width="686" height="52" alt="Port80" src="https://github.com/user-attachments/assets/bbd1d663-113a-4916-b641-c9f5e0a01d8b" />
+
+#### breaking down this line from the log 
+ - 127.0.0.1 - Client ip address in this case it's localhost.
+ - [02/Nov/2025:16:43:57 +0200] - time of the request and timezone.
+ - "GET /favicon.ico HTTP/1.1" - HTTP method, request resource and protocol version.
+ - 404 - not found server didn't find /favicon.ico
+ - 487 - size of the reponse in bytes
+ - "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" - User agent or the client software in this case the request came from a firefox or a firefox-like browser on a linux machine
+<img width="1560" height="62" alt="Screenshot 2025-11-02 183750" src="https://github.com/user-attachments/assets/f303a3b2-4f82-4eee-84d3-bf57682e22e6" />
 
 # b) Nmapped.
+Analyzing this return we can summerize that
+ - port 80/tcp is open.
+ - tcp is the protocol used.
+ - service running on the port is http meaning a web server
+ - and we can confirm that the web server is Apache/2.4.65 running on debian
+<img width="686" height="52" alt="Port80" src="https://github.com/user-attachments/assets/bbd1d663-113a-4916-b641-c9f5e0a01d8b" />
 
 # c) Skriptit.
 
-# d) Jäljet logissa.
+- From here we can summerize that OS and service detections were performed.
+
+<img width="1074" height="175" alt="A-script" src="https://github.com/user-attachments/assets/7560d7a5-af40-482e-b8e2-d1632e8765ab" />
+
+# d) Jäljet logissa. 
+
+ - This is an apache2 log after a 'sudo nmap -A localhost' scan we can see a nmap here in the context of a url this seems to be pointing to the Nmap sctripting engine page.
+
+<img width="1260" height="374" alt="jäljet-logissa" src="https://github.com/user-attachments/assets/e58b4408-c55e-4b10-95b5-7fbdfa896832" />
 
 # e) Wire sharking.
+
+- This is a wireshark capture done during a normal 'sudo nmap -A localhost' scan and as we can see using the 'frame contains "nmap"' filter there's quite a lot of lines that contain nmap they are mostly in the hypertext transfer protocol section.
+- Seem to be pointing to the same nmap scripting engine URl page.
+ 
+<img width="1275" height="681" alt="nmap_kohdat" src="https://github.com/user-attachments/assets/156c985e-d07e-4394-90fd-31bd5aff1505" />
 
 # f) Net grep
 
