@@ -50,14 +50,19 @@ Analyzing this return we can summerize that
 <img width="1275" height="681" alt="nmap_kohdat" src="https://github.com/user-attachments/assets/156c985e-d07e-4394-90fd-31bd5aff1505" />
 
 # f) Net grep
+- Here i downloaded ngrep with 'sudo apt-get install ngrep -y'
+- Then started to watch all the traffic that had nmap in it with 'sudo ngrep -d lo -i nmap'
+- I then opened another terminal and did a normal 'sudo nmap -A localhost' command and here is a snipet of the ngrep capture i got as it was quite large 
 <img width="1259" height="720" alt="ngrep-scan" src="https://github.com/user-attachments/assets/adf05b28-99cd-46b7-a95c-cb1afe67d9c2" />
 
 # g) Agentti
+So after a lot of hours trying to figure out what this means and how to do it i was unable to get it done and such couldn't do the rest of the assignements but i wanted to mention a few commands to get it work 
+  - 'sudo nmap -p 80 --script http-title --script-args'
+  - 'sudo nmap -A -script-args'
+  - 'sudo nmap -p 80 --script http-methods,http-server-header --script-args'
+  - I also went to https://ifconfig.me/ua tried the command on the nmap section of this blog post: https://mrtalagoz.medium.com/change-your-user-agent-in-web-pentests-bug-bounties-dont-be-a-plain-jane-98b442a0c601
 
-# h) Pienemmät jäljet
-
-# i) LoWer ChEck
-
+Maybe at somepoint i did it correctly and didn't realize it, but i would love to learn how this is done since from my research this sounds like a very good tool to know.
 # Sources 
 Karvinen 2025. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
 
@@ -66,3 +71,5 @@ Bianco 2013: Pyramid of pain: https://detect-respond.blogspot.com/2013/03/the-py
 Caltagirone et al 2013: Diamond Model: https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf
 
 EC-Council 2023: Diamond Model of Intrusion Analysis: What, Why, and How to Learn: https://www.eccouncil.org/cybersecurity-exchange/ethical-hacking/diamond-model-intrusion-analysis/
+
+Medium 2023: Change your User Agent in web pentests and bug bounties: Don’t Be a Plain Tester!: https://mrtalagoz.medium.com/change-your-user-agent-in-web-pentests-bug-bounties-dont-be-a-plain-jane-98b442a0c601
