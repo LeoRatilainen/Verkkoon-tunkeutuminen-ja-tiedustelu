@@ -50,6 +50,7 @@ Analyzing this return we can summerize that
 <img width="1275" height="681" alt="nmap_kohdat" src="https://github.com/user-attachments/assets/156c985e-d07e-4394-90fd-31bd5aff1505" />
 
 # f) Net grep
+<img width="1259" height="720" alt="ngrep-scan" src="https://github.com/user-attachments/assets/adf05b28-99cd-46b7-a95c-cb1afe67d9c2" />
 
 # g) Agentti
 
